@@ -1,1 +1,31 @@
 /* Empty. Add your own CSS if you like */
+ion-pane {
+  background-image: url(../img/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: center;
+
+}
+
+.botao{
+  position: relative;
+  top: 60px;
+  left: 20px;
+}
+
+.foto{
+  position: relative;
+  right: 60px;
+  width: 250px;
+}
+
+.efeito{
+  max-width: 300px;
+  padding: 80px;
+  position: absolute;
+  left: 40px;
+  right: 10px;/* posiciona a 90px para a esquerda */
+  top: 200px;
+  background-color: rgba(255,255,255, 0.8);
+  border-radius: 10px;
+}
