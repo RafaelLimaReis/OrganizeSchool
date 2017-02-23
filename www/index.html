@@ -15,7 +15,7 @@
     <!-- cordova script (this will be a 404 during development) -->
     <script src="cordova.js"></script>
 
-
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
     <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
@@ -30,16 +30,26 @@
   </head>
   <body ng-app="starter">
 <div class="container">
-    <ion-pane>
-        <ion-content>
-          <div class="efeito">
-            <img src="img/logo1.png" class="foto">
-            <div class="botao">
-              <button class="button button-balanced">INICIAR</button>
-            </div>
+  <ion-pane>
+      <ion-content class="text-center">
+        <div class="efeito">
+          <h1>Organize School</h1>
+          <ion-list class="list-inset">
+            <ion-item class="item item-input">
+              <i class="icon ion-person placeholder-icon"></i>
+              <input type="text" placeholder="Username">
+            </ion-item>
+            <ion-item class="item-input">
+              <i class="icon ion-locked placeholder-icon"></i>
+              <input type="text" placeholder="Senha">
+            </ion-item>
+          </ion-list>
+          <div class="botao">
+            <button class="button button-balanced">Iniciar</button>
           </div>
-        </ion-content>
-    </ion-pane>
+        </div>
+      </ion-content>
+  </ion-pane>
 </div>
   </body>
 </html>

@@ -3,14 +3,12 @@ ion-pane {
   background-image: url(../img/background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  position: center;
-
+  background-position: : center;
 }
 
 .botao{
   position: relative;
-  top: 60px;
-  left: 20px;
+  top: 40px;
 }
 
 .foto{
@@ -20,12 +18,29 @@ ion-pane {
 }
 
 .efeito{
-  max-width: 300px;
-  padding: 80px;
+  max-width:inherit;
+  padding: 60px;
   position: absolute;
   left: 40px;
-  right: 10px;/* posiciona a 90px para a esquerda */
-  top: 200px;
+  right: 40px;/* posiciona a 90px para a esquerda */
+  top: 100px;
   background-color: rgba(255,255,255, 0.8);
   border-radius: 10px;
+}
+
+.efeito h1{
+  font-family:'Lobster';
+  color: green;
+  font-size: 37px;
+  text-align: center;
+
+}
+
+.item-input{
+  margin-bottom: 10px;
+}
+
+.item-input input {
+  height: 35px;
+  width: auto;
 }
