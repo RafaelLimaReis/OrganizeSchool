@@ -1,0 +1,25 @@
+<ion-view>
+  <ion-nav-bar class="bar bar-balanced">
+    <ion-nav-back-button>Voltar</ion-nav-back-button> <!-- botao voltar na barra superior -->
+    <ion-nav-title>
+      <h1 class="title">Cadastro de Matérias</h1> <!-- titulo barra superior -->
+    </ion-nav-title>
+  </ion-nav-bar>
+  <ion-content>
+    <div class="list list-inset"> <!-- declarando lista -->
+      <label class="item item-input"> <!-- declarando nome e campo -->
+        <span class="input-label">Disciplina</span>
+        <input type="text">
+      </label>
+      <label class="item item-input">
+        <span class="input-label">Professor</span>
+        <input type="text">
+      </label>
+      <label class="item item-input">
+        <span class="input-label">Sigla</span>
+        <input type="text">
+      </label>
+    </div>
+    <button class="button button-block button-balanced textoBotao" ng-click="cadDisciplina()">Salvar</button>
+  </ion-content>
+</ion-view>

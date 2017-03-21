@@ -1,0 +1,52 @@
+<ion-view>
+  <ion-nav-title>
+    <h1 class="title">Configurações</h1>
+  </ion-nav-title>
+<ion-content>
+  <div class="card">
+    <div class="item item-divider"> <!-- Cabeçalho do cartao -->
+      <h2>Numero de Aulas por dia</h2>
+    </div>
+    <div class="item item-text-wrap"> <!-- Corpo do cartão -->
+      <div class="item range range-positive">
+        <h3>2</h3>
+        <input type="range" name="volume" min="0" max="100" value="33">
+        <h3>6</h3>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="item item-divider"> <!-- Cabeçalho do cartao -->
+      <h2>Notificações</h2>
+    </div>
+    <div class="item item-text-wrap"> <!-- Corpo do cartão -->
+      <ion-list>
+        <ion-item class="item item-toggle">
+          Notificações de Prova
+          <label class="toggle toggle-balanced">
+            <input type="checkbox">
+            <div class="track">
+              <div class="handle"></div>
+            </div>
+          </label>
+        </ion-item>
+        <ion-item>
+          <div class="item range">
+            <i class="icon ion-volume-low"></i>
+            <input type="range" name="volume">
+            <i class="icon ion-volume-high"></i>
+          </div>
+        </ion-item>
+      </ion-list>
+    </div>
+  </div>
+  <div class="button-config" style="width: 100%;">
+    <button class="button button-balanced" style="width: 50%;">
+      Salvar
+    </button>
+    <button class="button button-assertive">
+      Cancelar
+    </button>
+  </div>
+</ion-content>
+</ion-view>

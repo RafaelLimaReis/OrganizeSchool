@@ -1,0 +1,61 @@
+<ion-side-menus> <!-- Inicio de menu -->
+  <ion-side-menu-content> <!-- Conteudo fora do menu -->
+    <ion-nav-bar class="bar bar-header bar-balanced">
+      <ion-nav-buttons side="left"> <!-- Botao menu lado esquerdo -->
+        <button class="button button-icon ion-navicon-round" menu-toggle></button> <!-- menu-toggle ativa menu -->
+      </ion-nav-buttons>
+    </ion-nav-bar>
+    <ion-nav-view name="menuConteudo"></ion-nav-view> <!-- Aqui ira o conteudo das paginas -->
+  </ion-side-menu-content>
+  <ion-side-menu> <!-- inicio do menu -->
+    <ion-header-bar class="bar bar-balanced">
+      <h1 class="title" align-title="center">O que deseja fazer?</h1>
+    </ion-header-bar>
+    <ion-content> <!-- Conteudo do menu -->
+      <div class="list card" ng-repeat="dadosUser in dadosUsers"> <!-- inicio de carde -->
+        <div class="item item-avatar"> <!-- caixa de perfil -->
+          <img src="img/testeSBD.jpg">
+          <h2>{{dadosUser.nome}}</h2>
+          <p>{{dadosUser.curso}}</p>
+        </div>
+      </div>
+      <ion-list> <!-- lista -->
+        <ion-item menu-close class="item-icon-left" href="#/menu/home">
+          <i class="icon ion-home"></i> <!-- menu-close define fechamento do menu apos clicar botao -->
+          Inicial
+        </ion-item>
+        <ion-item menu-close class="item-icon-left" href="#/menu/disciplinas">
+          <i class="icon ion-ios-paper"></i>
+          Disciplinas
+        </ion-item>
+        <ion-item menu-close class="item-icon-left" href="#/menu/horarios">
+          <i class="icon ion-ios-clock"></i>
+          Horario
+        </ion-item>
+        <ion-item menu-close class="item-icon-left">
+          <i class="icon ion-ios-calendar"></i>
+          Agenda
+        </ion-item>
+      </ion-list>
+      <br>
+      <ion-list>
+        <ion-item menu-close class="item-icon-left">
+          <i class="icon ion-android-contact"></i>
+          Perfil
+        </ion-item>
+        <ion-item menu-close class="item-icon-left" href="#/menu/config">
+          <i class="icon ion-android-options"></i>
+          Configurações
+        </ion-item>
+        <ion-item menu-close class="item-icon-left">
+          <i class="icon ion-information-circled"></i>
+          Sobre
+        </ion-item>
+        <ion-item menu-close class="item-icon-left" href="#">
+          <i class="icon ion-power"></i>
+          Sair
+        </ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-side-menu>
+</ion-side-menus>

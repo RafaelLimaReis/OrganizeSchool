@@ -1,0 +1,29 @@
+<ion-view>
+  <ion-nav-title>
+    <h1 class="title">Disciplinas</h1>
+  </ion-nav-title>
+  <ion-nav-buttons side="right"> <!-- Botao barra superior lado direito -->
+    <button class="button button-clear button-white" ng-click="data.showorder = !data.showorder">Ordenar</button>
+  </ion-nav-buttons>
+  <ion-content>
+    <div class="card">
+      <div class="item item-divider"> <!-- Cabeçalho do cartao -->
+        <h2>Disciplinas Cadastradas</h2>
+      </div>
+      <div class="item item-text-wrap"> <!-- Corpo do cartão -->
+        <ion-list show-reorder="data.showorder" can-swipe="data.swipe"> <!-- Variaveis de ordenação e deslize -->
+          <ion-item ng-repeat="disciplina in disciplinas">
+            <h2>{{disciplina.nome}}</h2><h3>{{disciplina.prof}}</h3>
+            <ion-option-button class="button-assertive" ng-click="remover(disciplina)">
+              excluir
+            </ion-option-button>
+            <ion-reorder-button class="ion-navicon" on-reorder="moveItem(disciplina, $fromIndex, $toIndex)"></ion-reorder-button>
+          </ion-item>
+        </ion-list>
+      </div>
+    </div>
+    <a href="#/menu/cadDisciplina" class="button button-block button-balanced">
+      <span class="textoBotao">Nova Disciplina</span>
+    </a>
+  </ion-content>
+</ion-view>
