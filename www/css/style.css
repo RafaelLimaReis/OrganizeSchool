@@ -1,4 +1,4 @@
-/* Empty. Add your own CSS if you like */
+/* tela login */
 .login {
   background-image: url(../img/background.jpg);
   background-repeat: no-repeat;
@@ -6,28 +6,25 @@
   background-position: : center;
 }
 
+/* posicao do botao logar */
 .botao{
   position: relative;
   top: 40px;
 }
 
-.foto{
-  position: relative;
-  right: 60px;
-  width: 250px;
-}
-
+/* efeito icone quadrado tela de login */
 .efeito{
   max-width:inherit;
   padding: 60px;
   position: absolute;
   left: 40px;
-  right: 40px;/* posiciona a 90px para a esquerda */
+  right: 40px;
   top: 100px;
   background-color: rgba(255,255,255, 0.8);
   border-radius: 10px;
 }
 
+/* efeito nome tela login */
 .efeito h1{
   font-family:'Lobster';
   color: green;
@@ -36,11 +33,24 @@
 
 }
 
+/* margem entre os campos username e senha */
 .item-input{
   margin-bottom: 10px;
 }
 
-.item-input input {
-  height: 35px;
-  width: auto;
+/* edição titulo */
+.title {
+  font-family: 'lobster';
+  text-align: center;
+}
+
+/*Efeito em botao*/
+.textoBotao{
+  font-family: 'lobster';
+  text-align: center;
+  font-size: 25px;
+}
+
+.table-horario{
+      padding-left: 25px;
 }
